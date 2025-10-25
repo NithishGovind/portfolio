@@ -5,7 +5,6 @@ import { getCollection } from "astro:content";
 import createSlug from "../lib/createSlug"
 
 const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-
 const last_posts = posts.slice(0, 3);
 ---
 
@@ -23,9 +22,6 @@ const last_posts = posts.slice(0, 3);
     </div>
     <div class="mt-8">
       <a class="btn" href="https://www.linkedin.com/in/nithish-govind-52b914244" target="_blank"> Let's connect!</a>
-      <!-- <a href="https://github.com/NithishGovind" target="_blank" class="btn btn-outline ml-5">
-        View GitHub
-      </a> -->
       <a href="https://drive.google.com/drive/folders/1AnPr21tTB4a3an8gjWW9x1hpDsmDkTt9?usp=sharing" target="_blank" class="btn btn-outline ml-5">
         Download CV/Portfolio
       </a>
@@ -37,91 +33,90 @@ const last_posts = posts.slice(0, 3);
       
       <!-- Skills with images (Icon on top) -->
       <div class="skill-card cursor-default select-none flex flex-col items-center">
-        <img src="/icons/python-svgrepo-com.svg" alt="Python" />
+        <img src="/portfolio/icons/python-svgrepo-com.svg" alt="Python" />
         <span>Python</span>
       </div>
       <div class="skill-card cursor-default select-none flex flex-col items-center">
-        <img src="/icons/c-svgrepo-com.svg" alt="C" />
+        <img src="/portfolio/icons/c-svgrepo-com.svg" alt="C" />
         <span>C</span>
       </div>
       <div class="skill-card cursor-default select-none flex flex-col items-center">
-        <img src="/icons/cpp2-svgrepo-com.svg" alt="C++" />
+        <img src="/portfolio/icons/cpp2-svgrepo-com.svg" alt="C++" />
         <span>C++</span>
       </div>
       <div class="skill-card cursor-default select-none flex flex-col items-center">
-        <img src="/icons/matlab-svgrepo-com.svg" alt="MATLAB" />
+        <img src="/portfolio/icons/matlab-svgrepo-com.svg" alt="MATLAB" />
         <span>MATLAB</span>
       </div>
       <div class="skill-card cursor-default select-none flex flex-col items-center">
-        <img src="/icons/docker-svgrepo-com.svg" alt="Docker" />
+        <img src="/portfolio/icons/docker-svgrepo-com.svg" alt="Docker" />
         <span>Docker</span>
       </div>
       <div class="skill-card cursor-default select-none flex flex-col items-center">
-        <img src="/icons/git-svgrepo-com.svg" alt="Git" />
+        <img src="/portfolio/icons/git-svgrepo-com.svg" alt="Git" />
         <span>Git</span>
       </div>
       <div class="skill-card cursor-default select-none flex flex-col items-center">
-        <img src="/icons/tensorflow-svgrepo-com.svg" alt="TensorFlow" />
+        <img src="/portfolio/icons/tensorflow-svgrepo-com.svg" alt="TensorFlow" />
         <span>TensorFlow</span>
       </div>
       <div class="skill-card cursor-default select-none flex flex-col items-center">
-        <img src="/icons/pytorch-svgrepo-com.svg" alt="PyTorch" />
+        <img src="/portfolio/icons/pytorch-svgrepo-com.svg" alt="PyTorch" />
         <span>PyTorch</span>
       </div>
       <div class="skill-card cursor-default select-none flex flex-col items-center">
-        <img src="/icons/tailwindcss-svgrepo-com.svg" alt="tailwindcss" />
+        <img src="/portfolio/icons/tailwindcss-svgrepo-com.svg" alt="tailwindcss" />
         <span>tailwindcss</span>
       </div>
       <div class="skill-card cursor-default select-none flex flex-col items-center">
-        <img src="/icons/flask-svgrepo-com.svg" alt="flask" />
+        <img src="/portfolio/icons/flask-svgrepo-com.svg" alt="flask" />
         <span>flask</span>
       </div>
       <div class="skill-card cursor-default select-none flex flex-col items-center">
-        <img src="/icons/sqlite-svgrepo-com.svg" alt="SQLite" />
+        <img src="/portfolio/icons/sqlite-svgrepo-com.svg" alt="SQLite" />
         <span>SQLite</span>
       </div>
       <div class="skill-card cursor-default select-none flex flex-col items-center">
-        <img src="/icons/cuda-svgrepo-com.svg" alt="CUDA" />
+        <img src="/portfolio/icons/cuda-svgrepo-com.svg" alt="CUDA" />
         <span>CUDA</span>
       </div>
       <div class="skill-card cursor-default select-none flex flex-col items-center">
-        <img src="/icons/unity-svgrepo-com.svg" alt="Unity" />
+        <img src="/portfolio/icons/unity-svgrepo-com.svg" alt="Unity" />
         <span>Unity</span>
       </div>
       <div class="skill-card cursor-default select-none flex flex-col items-center">
-        <img src="/icons/pandas-svgrepo-com.svg" alt="Pandas" />
+        <img src="/portfolio/icons/pandas-svgrepo-com.svg" alt="Pandas" />
         <span>Pandas</span>
       </div>
       <div class="skill-card cursor-default select-none flex flex-col items-center">
-        <img src="/icons/selenium-svgrepo-com.svg" alt="Selenium" />
+        <img src="/portfolio/icons/selenium-svgrepo-com.svg" alt="Selenium" />
         <span>Selenium</span>
       </div>
       <div class="skill-card cursor-default select-none flex flex-col items-center">
-        <img src="/icons/opencv-svgrepo-com.svg" alt="Image processing" />
+        <img src="/portfolio/icons/opencv-svgrepo-com.svg" alt="Image processing" />
         <span>Image processing</span>
       </div>
       <div class="skill-card cursor-default select-none flex flex-col items-center">
-        <img src="/icons/protoboard-svgrepo-com.svg" alt="PCB Design" />
+        <img src="/portfolio/icons/protoboard-svgrepo-com.svg" alt="PCB Design" />
         <span>PCB Design</span>
       </div>
       <div class="skill-card cursor-default select-none flex flex-col items-center">
-        <img src="/icons/autodesk-svgrepo-com.svg" alt="Autodesk" />
+        <img src="/portfolio/icons/autodesk-svgrepo-com.svg" alt="Autodesk" />
         <span>Autodesk</span>
       </div>
       <div class="skill-card cursor-default select-none flex flex-col items-center">
-        <img src="/icons/solidworks-svgrepo-com.svg" alt="SolidWorks" />
+        <img src="/portfolio/icons/solidworks-svgrepo-com.svg" alt="SolidWorks" />
         <span>SolidWorks</span>
       </div>
-
-      <!-- Skills without images (text below icon position) -->
       <div class="skill-card cursor-default select-none flex flex-col items-center justify-center">
-        <img src="/icons/ros.svg" alt="ros" />
+        <img src="/portfolio/icons/ros.svg" alt="ros" />
         <span>ROS</span>
       </div>
       <div class="skill-card cursor-default select-none flex flex-col items-center justify-center">
-        <img src="/icons/noejs.svg" alt="node" />
+        <img src="/portfolio/icons/noejs.svg" alt="node" />
         <span>node.js</span>
       </div>
+      <!-- Skills that have no images -->
       <div class="skill-card cursor-default select-none flex flex-col items-center justify-center">
         <span>Ardupilot</span>
       </div>
@@ -192,52 +187,50 @@ const last_posts = posts.slice(0, 3);
     }
   </style>
   <div>
-  <a href="/cv#certifications" class="btn btn-outline ml-5">
-    View Certifications
-  </a>
+    <a href="/cv#certifications" class="btn btn-outline ml-5">
+      View Certifications
+    </a>
     <div class="mb-5" id="achievements"></div>
-      <div class="text-3xl w-full font-bold mb-2 mt-10">Key Achievements 🏆</div>
-    </div>
+    <div class="text-3xl w-full font-bold mb-2 mt-10">Key Achievements 🏆</div>
+  </div>
 
+  <HorizontalCard
+    title="Smart India Hackathon 2023 - National Finalist"
+    img="/portfolio/sih.png"
+    desc="Top 5 among 400+ teams nationwide. Built GIS-based water quality monitoring system with computer vision and sensor integration for real-time environmental tracking."
+    badge="TOP 5"
+    url="/services"
+  />
+  <div class="divider my-0"></div>
 
-    <HorizontalCard
-      title="Smart India Hackathon 2023 - National Finalist"
-      img="/sih.png"
-      desc="Top 5 among 400+ teams nationwide. Built GIS-based water quality monitoring system with computer vision and sensor integration for real-time environmental tracking."
-      badge="TOP 5"
-      url="/services"
-    />
-    <div class="divider my-0"></div>
-
-    <HorizontalCard
-      title="ISRO Robotics Challenge 2024 - Pre-Finalist"
-      img="/isro_final.jpg"
-      desc="Space Exploration Rover with autonomous navigation. Secured ₹2.5 Lakhs funding from CARCA, Anna University for advanced robotics research and development."
-      badge="FUNDED"
-      url="/services"
-    />
-    <div class="text-right mb-10">
-      <a href="/services" class="btn">
-        + More Achievements
-      </a>
-    </div>
+  <HorizontalCard
+    title="ISRO Robotics Challenge 2024 - Pre-Finalist"
+    img="/portfolio/isro_final.jpg"
+    desc="Space Exploration Rover with autonomous navigation. Secured ₹2.5 Lakhs funding from CARCA, Anna University for advanced robotics research and development."
+    badge="FUNDED"
+    url="/services"
+  />
+  <div class="text-right mb-10">
+    <a href="/services" class="btn">
+      + More Achievements
+    </a>
+  </div>
 
   <div>
     <div class="text-3xl w-full font-bold mb-2">Featured Projects {"</>"}</div>
   </div>
-    <HorizontalCard
+  <HorizontalCard
     title="GPS-Denied Rover with Robot Arm "
-    img="/rover.png"
+    img="/portfolio/rover.png"
     desc=" Built from scratch with CNC-cut chassis and custom PCBs. Jetson Nano for ROS2 autonomy. Visual-Inertial Odometry and obstacle avoidance using Intel RealSense D435i. 4-DOF 3D-printed manipulator with inverse kinematics and collision-free motion planning."
     url="#"
     badge="ISRO Robotics Challenge 2024"
     tags={['ROS2', 'Visual Inertial Odometry', 'PCB Design', 'Motion & Path Planning', 'Control Systems']}
   />
   <div class="divider my-0"></div>
-  
   <HorizontalCard
     title="GPS-Denied Autonomous Drone"
-    img="/drone.png"
+    img="/portfolio/drone.png"
     desc="Terrain mapping drone for extraterrestrial surfaces using Visual-Inertial Odometry (VIO). Built for ISRO Robotics Challenge 2025 - Advanced to final rounds."
     url="/projects"
     badge="FEATURED"
@@ -245,29 +238,9 @@ const last_posts = posts.slice(0, 3);
     tags={['Arduipilot', 'MAVLink','ROS2','Visual Inertial Odometry' ]}
   />
   <div class="divider my-0"></div>
-  <!-- <HorizontalCard
-    title="Autonomous Navigation System - JetRacer AI"
-    img="/jetracer.jpg"
-    desc="Real-time autonomous navigation integrating visual odometry and vision model with NVIDIA Jetson Nano. Reduced robot - workstation latency by 85% (180ms → 27ms)."
-    url="/projects"
-    badge="90% latency ↓"
-    tags={['Visual Odometry', 'Python', 'Residual Networks', 'Image processing']}
-  />
-  <div class="divider my-0"></div> -->
-
-
-  
-  <!-- <HorizontalCard
-    title="Robotic Docking System - Surgical Robot"
-    img="/post_img.webp"
-    desc="Automated robotic docking system near CT table for surgical robot. Integrated FusionTrack 500, camera calibration, and bed tilt correction for accurate operation on uneven hospital surfaces."
-    url="/projects"
-    badge="PERFINT"
-    tags={['Python', 'Point Cloud', 'ROS', 'Camera Calibration', 'Digital Twin']}
-  /> -->
   <div class="text-right mb-10">
     <a href="/projects" class="btn">
       + More Projects
     </a>
   </div>
-  
+</BaseLayout>
