@@ -1,3 +1,93 @@
-.time-line-container>div:last-child .education__time>.education__line {
-    display: none;
+/* ============================================
+   FONT CONFIGURATION - APPLE STYLE (INTER)
+   ============================================ */
+
+/* Import Inter - closest to SF Pro */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* Font Variables */
+:root {
+  /* Primary font - Inter mimics SF Pro very closely */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  
+  /* Monospace */
+  --font-mono: ui-monospace, "SF Mono", Monaco, "Cascadia Mono", "Segoe UI Mono", monospace;
+}
+
+/* Global font application - APPLE STYLE */
+html,
+body,
+* {
+  font-family: var(--font-primary) !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6,
+.text-5xl, .text-4xl, .text-3xl, .text-2xl, .text-xl {
+  font-family: var(--font-primary) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.022em;
+}
+
+/* Large headlines */
+h1, .text-5xl {
+  font-weight: 600 !important;
+  letter-spacing: -0.015em;
+}
+
+/* Body text */
+p, span, div, a, li, td, th, label, input, textarea, select, button {
+  font-family: var(--font-primary) !important;
+  letter-spacing: -0.011em;
+}
+
+/* Code */
+code, pre, kbd, samp {
+  font-family: var(--font-mono) !important;
+}
+
+/* Buttons */
+.btn {
+  font-family: var(--font-primary) !important;
+  font-weight: 500;
+}
+
+/* Larger skill card for icon+text, with responsive font/width */
+.btn.skill-card {
+  min-width: 130px;
+  min-height: 60px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  white-space: normal;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.2;
+  gap: 0.2rem;
+}
+
+/* For smaller screens, slightly scale down font and icon */
+@media (max-width: 700px) {
+  .btn.skill-card {
+    min-width: 110px;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.5rem;
+  }
+  .btn.skill-card img, .btn.skill-card i {
+    width: 1.8rem;
+    height: 1.8rem;
+    font-size: 1.8rem;
+  }
+}
+
+/* Ensure icons shrink on very small screens */
+.btn.skill-card img, .btn.skill-card i {
+  width: 2rem;
+  height: 2rem;
+  font-size: 2rem;
 }

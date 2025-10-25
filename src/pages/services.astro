@@ -3,38 +3,102 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
-<BaseLayout title="Projects" sideBarActiveItemID="services">
+<BaseLayout title="Achievements" sideBarActiveItemID="services">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Services Header</div>
+    <div class="text-3xl w-full font-bold mb-5">Achievements 🏆</div>
+  </div>
+
+  <!-- Competition Achievements -->
+  <div>
+    <div class="text-2xl w-full font-bold mb-4 mt-8">National Competitions</div>
+  </div>
+
+  <div class="mb-8 p-4 bg-base-200 rounded-lg">
+    <div class="text-center">
+      <span class="text-lg font-semibold">🏆 7 Major Achievements</span>
+      <span class="mx-4">|</span>
+      <span class="text-lg font-semibold">₹3L+ Funding</span>
+      <span class="mx-4">|</span>
+      <span class="text-lg font-semibold">Top 5 Nationally</span>
+    </div>
+  </div>
+
+
+
+
+  <HorizontalCard
+    title="Smart India Hackathon 2023 - National Finalist"
+    img="/sih.png"
+    desc="Secured Top 5 position among 400+ teams nationwide for GIS-based water quality monitoring system."
+    badge="TOP 5"
+    url="/projects"
+  />
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="SSN National Level Hackathon - 1st Place"
+    img="/wearable.png"
+    desc="Won first place for wearable navigation system for visually impaired individuals."
+    badge="1ST PLACE"
+    url="/projects"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="ISRO Robotics Challenge 2024 - Pre-Finalist & Funded Project"
+    img="/isro_final.jpg"
+    desc="Advanced to pre-finals with Space Exploration Rover featuring autonomous navigation in rocky terrain. Secured ₹2.5 Lakhs funding from CARCA (Centre for Academic Research & Career Advancement), Anna University. "
+    badge="₹2.5L FUNDED"
+    url="/projects"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Hackathon in Science & Engineering - 2nd Place"
+    img="/comfortlift.png"
+    desc="Second place for ComfortLift - Assisted Seating Mobility System for elderly and specially-abled individuals. Autonomous indoor navigation with 2D LiDAR + IMU-based SLAM. "
+    url="/projects"
+  />
+  <HorizontalCard
+    title="ISRO Robotics Challenge 2025 - Pre-Finalist"
+    img="/drone.png"
+    desc="Advanced to final rounds with GPS-Denied Autonomous Drone." 
+    badge="ISRO 2025"
+    url="/projects"
+  />
+  <div class="divider my-0"></div>
+  <!-- Funded Projects -->
+  <div>
+    <div class="text-2xl w-full font-bold mb-4 mt-10">Funded Research Projects</div>
   </div>
 
   <HorizontalCard
-    title="Service 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    badge="NEW"
-    url="#"
+    title="Pothole Detection System - EYIC 2024 "
+    img="/iitb.png"
+    badge = "IIT Bombay"
+    desc="Secured funding from Entrepreneurship and Innovation Cell, IIT-Bombay. "
+    url="/projects"
   />
   <div class="divider my-0"></div>
+
   <HorizontalCard
-    title="Service 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Indian Sign Language Generation - CSRC 2024 (Anna University)"
+    img="/anna_univ.jpg"
+    desc="Secured funding from Centre for Student Research & Career, Anna University. Tamil speech to Indian Sign Language animation pipeline. "
+    badge="CSRC FUNDED"
+    url="/projects"
   />
-  <div class="divider my-0"></div>
+
+
+  <!-- Certifications & Professional Development -->
+  <div>
+    <div class="text-2xl w-full font-bold mb-4 mt-10">Professional Certifications</div>
+  </div>
+
   <HorizontalCard
-    title="Service 3"
+    title="Advanced Robotics Certifications"
     img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
+    desc="Completed multiple industry-recognized certifications: ROS2 Navigation and SLAM | Basics of KUKA Industrial Robots | Machine Learning Fundamentals & Applications | Ladder Logic PLC Programming for Industrial Automation | Git & GitHub Version Control | Raspberry Pi Hardware & Software Integration | Siemens NX Basic CAD Design."
+    badge="7 CERTS"
+    url="/cv"
   />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Service 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
+
 </BaseLayout>

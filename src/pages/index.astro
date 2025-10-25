@@ -12,67 +12,261 @@ const last_posts = posts.slice(0, 3);
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
     <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
+    <div class="text-5xl font-bold">I'm Nithish</div>
+    <div class="text-3xl py-3 font-bold">Hardware Automation | Embedded Software Engineer</div>
     <div class="py-2">
       <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
-        Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
-        it useful!
+        I <b>automate anything that moves</b> from autonomous rovers and drones to Robotic arm and Legged robot. 
+        Hands-on engineering student passionate about building intelligent systems at the intersection of 
+        <b>robotics, embedded systems, computer vision, and AI</b>.
       </text>
     </div>
     <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-      <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
-        Get This template
+      <a class="btn" href="https://www.linkedin.com/in/nithish-govind-52b914244" target="_blank"> Let's connect!</a>
+      <!-- <a href="https://github.com/NithishGovind" target="_blank" class="btn btn-outline ml-5">
+        View GitHub
+      </a> -->
+      <a href="https://drive.google.com/drive/folders/1AnPr21tTB4a3an8gjWW9x1hpDsmDkTt9?usp=sharing" target="_blank" class="btn btn-outline ml-5">
+        Download CV/Portfolio
       </a>
     </div>
   </div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+    <div class="text-3xl w-full font-bold mb-2">Featured Projects {"</>"}</div>
   </div>
-
-  <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    <HorizontalCard
+    title="GPS-Denied Rover with Robot Arm "
+    img="/rover.png"
+    desc=" Built from scratch with CNC-cut chassis and custom PCBs. Jetson Nano for ROS2 autonomy. Visual-Inertial Odometry and obstacle avoidance using Intel RealSense D435i. 4-DOF 3D-printed manipulator with inverse kinematics and collision-free motion planning."
     url="#"
-    badge="NEW"
+    badge="ISRO Robotics Challenge 2024"
+    tags={['ROS2', 'Visual Inertial Odometry', 'PCB Design', 'Motion & Path Planning', 'Control Systems']}
   />
   <div class="divider my-0"></div>
+  
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="GPS-Denied Autonomous Drone"
+    img="/drone.png"
+    desc="Terrain mapping drone for extraterrestrial surfaces using Visual-Inertial Odometry (VIO). Built for ISRO Robotics Challenge 2025 - Advanced to final rounds."
+    url="/projects"
+    badge="FEATURED"
+    badge="ISRO Robotics Challenge 2025"
+    tags={['Arduipilot', 'MAVLink','ROS2','Visual Inertial Odometry' ]}
   />
   <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
+  <!-- <HorizontalCard
+    title="Autonomous Navigation System - JetRacer AI"
+    img="/jetracer.jpg"
+    desc="Real-time autonomous navigation integrating visual odometry and vision model with NVIDIA Jetson Nano. Reduced robot - workstation latency by 85% (180ms → 27ms)."
+    url="/projects"
+    badge="90% latency ↓"
+    tags={['Visual Odometry', 'Python', 'Residual Networks', 'Image processing']}
   />
+  <div class="divider my-0"></div> -->
 
+
+  
+  <!-- <HorizontalCard
+    title="Robotic Docking System - Surgical Robot"
+    img="/post_img.webp"
+    desc="Automated robotic docking system near CT table for surgical robot. Integrated FusionTrack 500, camera calibration, and bed tilt correction for accurate operation on uneven hospital surfaces."
+    url="/projects"
+    badge="PERFINT"
+    tags={['Python', 'Point Cloud', 'ROS', 'Camera Calibration', 'Digital Twin']}
+  /> -->
+  <div class="text-right mb-10">
+    <a href="/projects" class="btn">
+      + More Projects
+    </a>
+  </div>
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+    <div class="text-3xl w-full font-bold mb-2 mt-10">Key Achievements 🏆</div>
   </div>
 
-  {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + createSlug(post.data.title, post.slug)}
-          target="_self"
-          badge={post.data.badge}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
+  <!-- <div class="py-4">
+    <ul class="list-disc ml-6 space-y-2 text-lg">
+      <li><b>ISRO Robotics Challenge 2024 & 2025</b> - Advanced to final rounds with space exploration rover and GPS-denied drone</li>
+      <li><b>Smart India Hackathon 2023</b> - Finalist (Top 5/400+) for GIS-based water quality monitoring system</li>
+      <li><b>SSN National Hackathon</b> - 1st Place for wearable system for visually impaired using ESP32</li>
+      <li><b>Funded Projects</b> - EYIC 2024 (IIT-Bombay) Pothole Detection | CSRC 2025 Tamil Sign Language Generation</li>
+    </ul>
+  </div> -->
+
+  <HorizontalCard
+    title="Smart India Hackathon 2023 - National Finalist"
+    img="/sih.png"
+    desc="Top 5 among 400+ teams nationwide. Built GIS-based water quality monitoring system with computer vision and sensor integration for real-time environmental tracking."
+    badge="TOP 5"
+    url="/services"
+  />
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="ISRO Robotics Challenge 2024 - Pre-Finalist"
+    img="/isro_final.jpg"
+    desc="Space Exploration Rover with autonomous navigation. Secured ₹2.5 Lakhs funding from CARCA, Anna University for advanced robotics research and development."
+    badge="FUNDED"
+    url="/services"
+  />
+  <div class="text-right mb-10">
+    <a href="/services" class="btn">
+      + More Achievements
+    </a>
+  </div>
+<div class="mb-10">
+  <div class="text-3xl font-bold mb-5">Top Skills</div>
+  <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-4">
+    <div class="skill-card cursor-default select-none">
+      <img src="/icons/python-svgrepo-com.svg" alt="Python" />
+      <span>Python</span>
+    </div>
+    <div class="skill-card cursor-default select-none">
+      <img src="/icons/c-svgrepo-com.svg" alt="C" />
+      <span>C</span>
+    </div>
+    <div class="skill-card cursor-default select-none">
+      <img src="/icons/cpp2-svgrepo-com.svg" alt="C++" />
+      <span>C++</span>
+    </div>
+    <div class="skill-card cursor-default select-none">
+      <img src="/icons/matlab-svgrepo-com.svg" alt="MATLAB" />
+      <span>MATLAB</span>
+    </div>
+    <div class="skill-card cursor-default select-none">
+      <img src="/icons/docker-svgrepo-com.svg" alt="Docker" />
+      <span>Docker</span>
+    </div>
+    <div class="skill-card cursor-default select-none">
+      <img src="/icons/git-svgrepo-com.svg" alt="Git" />
+      <span>Git</span>
+    </div>
+    <div class="skill-card cursor-default select-none">
+      <span>ROS</span>
+    </div>
+    <div class="skill-card cursor-default select-none">
+      <img src="/icons/tensorflow-svgrepo-com.svg" alt="TensorFlow" />
+      <span>TensorFlow</span>
+    </div>
+    <div class="skill-card cursor-default select-none">
+      <img src="/icons/pytorch-svgrepo-com.svg" alt="PyTorch" />
+      <span>PyTorch</span>
+    </div>
+    <div class="skill-card cursor-default select-none">
+      <img src="/icons/tailwindcss-svgrepo-com.svg" alt="tailwindcss" />
+      <span>tailwindcss</span>
+    </div>
+    <div class="skill-card cursor-default select-none">
+      <span>node.js</span>
+    </div>
+    <div class="skill-card cursor-default select-none">
+      <img src="/icons/flask-svgrepo-com.svg" alt="flask" />
+      <span>flask</span>
+    </div>
+    <div class="skill-card cursor-default select-none">
+      <img src="/icons/sqlite-svgrepo-com.svg" alt="SQLite" />
+      <span>SQLite</span>
+    </div>
+    <div class="skill-card cursor-default select-none">
+      <img src="/icons/cuda-svgrepo-com.svg" alt="CUDA" />
+      <span>CUDA</span>
+    </div>
+    <div class="skill-card cursor-default select-none">
+      <img src="/icons/unity-svgrepo-com.svg" alt="Unity" />
+      <span>Unity</span>
+    </div>
+    <div class="skill-card cursor-default select-none">
+      <span>Ardupilot</span>
+    </div>
+    <div class="skill-card cursor-default select-none">
+      <span>scikit learn</span>
+    </div>
+    <div class="skill-card cursor-default select-none">
+      <img src="/icons/pandas-svgrepo-com.svg" alt="Pandas" />
+      <span>Pandas</span>
+    </div>
+    <div class="skill-card cursor-default select-none">
+      <img src="/icons/selenium-svgrepo-com.svg" alt="Selenium" />
+      <span>Selenium</span>
+    </div>
+    <div class="skill-card cursor-default select-none">
+      <!-- <img src="/icons/seaborn-svgrepo-com.svg" alt="Seaborn" /> -->
+      <span>Seaborn</span>
+    </div>
+    <div class="skill-card cursor-default select-none">
+      <span>Control systems</span>
+    </div>
+    <div class="skill-card cursor-default select-none">
+      <img src="/icons/opencv-svgrepo-com.svg" alt="Computer Vision" />
+      <span>Computer Vision</span>
+    </div>
+    <div class="skill-card cursor-default select-none">
+      <img src="/icons/opencv-svgrepo-com.svg" alt="Image processing" />
+      <span>Image processing</span>
+    </div>
+    <div class="skill-card cursor-default select-none">
+      <span>SLAM</span>
+    </div>
+    <div class="skill-card cursor-default select-none">
+      <img src="/icons/protoboard-svgrepo-com.svg" alt="PCB Design" />
+      <span>PCB Design</span>
+    </div>
+    <div class="skill-card cursor-default select-none">
+      <span>Jetson Nano</span>
+    </div>
+    <div class="skill-card cursor-default select-none">
+      <img src="/icons/autodesk-svgrepo-com.svg" alt="Autodesk" />
+      <span>Autodesk</span>
+    </div>
+    <div class="skill-card cursor-default select-none">
+      <img src="/icons/solidworks-svgrepo-com.svg" alt="SolidWorks" />
+      <span>SolidWorks</span>
+    </div>
+  </div>
+</div>
+
+<style>
+  .skill-card {
+    min-width: 140px;
+    min-height: 70px;
+    background: rgba(0,0,0,0.03);
+    border-radius: 0.75rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    white-space: normal;
+    padding: 0.8rem 0.75rem;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.2;
+    gap: 0.25rem;
+    word-break: break-word;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.04);
+    border: none;
+    transition: background 0.23s;
   }
-</BaseLayout>
+  .skill-card:hover {
+    background: rgba(59,130,246,0.10);
+  }
+  .skill-card img,
+  .skill-card svg {
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 0.15rem;
+    object-fit: contain;
+  }
+  @media (max-width: 700px) {
+    .skill-card {
+      min-width: 110px;
+      font-size: 0.9rem;
+      padding: 0.7rem 0.5rem;
+    }
+    .skill-card img,
+    .skill-card svg {
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+  }
+</style>
