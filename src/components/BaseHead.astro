@@ -3,14 +3,23 @@
 // all pages through the use of the <BaseHead /> component.
 import '../styles/global.css';
 
+// TypeScript interface (optional, but recommended for type safety)
 export interface Props {
-	title: string;
-	description: string;
-	image?: string;
-	ogType?: string;
+    title: string;
+    description: string;
+    image?: string;
+    ogType?: string;
 }
 
-const { title = 'Nithish | Portfolio', description = 'Intersection of Hardware and Software', image = '/social_img.webp', ogType = 'website' } = Astro.props;
+// Provide CUSTOM, MEANINGFUL DEFAULTS below.
+// These are used ONLY when a particular page does not set its own.
+// Edit as you wish:
+const { 
+  title = 'Nithish | Portfolio',
+  description = 'Portfolio of Nithish Govind – robotics, embedded systems, AI projects, national achievements, and workshops.',
+  image = '/social_img.webp',
+  ogType = 'website'
+} = Astro.props;
 ---
 
 <!-- Global Metadata -->
